@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101018">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>PopoGPT</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+<header><div class="logo">⚡</div><div><h1>PopoGPT</h1><p>Ton assistant personnalisable</p></div></header>
+<main id="chat"><div class="msg bot">Salut ! Je suis PopoGPT. Pose-moi une question.</div></main>
+<section class="controls">
+<label for="model">Modèle</label>
+<select id="model"><option value="gpt-5.6-luna">GPT-5.6 Luna</option><option value="deepseek-chat">DeepSeek Chat (si disponible)</option></select>
+<form id="form"><textarea id="input" rows="2" placeholder="Écris ton message..." required></textarea><button id="send">Envoyer</button></form>
+<div id="status">Prêt</div><button id="reset" class="reset">Nouvelle conversation</button>
+</section>
+<script src="app.js"></script>
+</body></html>
